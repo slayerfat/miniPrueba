@@ -6,7 +6,9 @@ Repositorio en donde se manejara el codigo referente al sistema.
 
 # en construccion!
 
-### este repositorio estara referido por todos los integrantes del grupo.
+### este repositorio estara referido por todos los integrantes del grupo. la idea es que se familiarizen (a los que le de la gana) para que trabajen en esto.
+
+en muy poco tiempo me di cuenta que git es elemental y todos deben usarlo, simplemente por control, y validacion de codigo, como uds. estaban trabajando era una locura, eso tiene que cambiar.
 
 ok, lo elemental para empezar a usar el git:
 
@@ -136,8 +138,8 @@ existen muchas razones por las que tienes que hacer `git status` entre ellas est
 
 el repositorio principal se llama master, considera master como la matriz principal en donde todos trabajamos.
 
-*master
-	*tu clon local
+* master
+	* tu clon local
 
 tu clon local es subdito de master, si master cambia, tu cambias, si tu cambias, cambias a master.
 
@@ -154,10 +156,12 @@ Changes not staged for commit:
 
 ahi se lee venezolanamente:
 
+```
 cambiastes vainas:
 	usa los comandos tal si quieres:
 
 	modificado: README.md
+```
 
 #GIT ADD
 
@@ -213,12 +217,14 @@ Changes to be committed:
 
 ```
 
+```
 en venezolano:
 
 cambios a ser mandados:
 	usa tal comando si te da la gana:
 
 			modificado: archivoTal.tal
+```
 
 #GIT COMMIT
 
@@ -245,6 +251,32 @@ se hace un ultimo `git status` para ver que todo esta bien, deberia decir algo c
 **y ya, eso es todo lo basico...**
 
 y este proceso se repite una y otra vez en cada momento que hagas cambios importantes.
+
+piensa en el git commit como  datos que PLANEAS MANDAR, no como datos que ya enviaste o estas enviando.
+
+#GIT PUSH
+
+piensa en el push como datos que ESTAS MANDANDO concretamente.
+
+simplemente haces un 
+
+```
+git push
+```
+
+y ya, mandaste los cambios al repositorio (en este caso github)
+
+como es una conexion https encriptada te pedira tu usuario y contraseña:
+
+```
+
+Username for 'https://github.com': tuSeudonimo
+Password for 'https://slayerfat@github.com': <i>tu clave</i>
+
+```
+
+listo papa, ya hiciste un cambio a master.
+
 
 en resumen, sin tanta paja:
 
@@ -289,5 +321,14 @@ git commit -m "tus comentarios SOBRE TU IMPORTANTE CAMBIO!! (se descriptivo) "
 ```
 git status
 ```
+
+y por ultimo haces el push a master:
+
+```
+git push
+```
+
+
+ESO ES TODO.
 
 luego hablar sobre como hacer otras cosas. esto es lo mas basico.
