@@ -113,7 +113,7 @@ ls github
 ```
 
 deberias ver una carpeta nueva llamada
-**sistemaJag**
+**miniPrueba**
 
 dentro de esta carpeta estara exactamente lo mismo que hay en este repositorio.
 
@@ -131,6 +131,25 @@ git status
 ```
 
 esto lo que hace literalmente es chequear el estatus del repositorio en relacion a lo que acabas de clonar.
+
+saldra algo como esto:
+
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+
+```
+
+en venezolano:
+```
+desde el punto de vista de master (repositorio)
+tu clon esta sincronizado con 'repositorio(repo)'.
+
+nada para actualizar, directorio fino.
+
+```
 
 existen muchas razones por las que tienes que hacer `git status` entre ellas esta la idea de que sepas como esta la sincronizacion entre tu y el repo.
 
@@ -159,7 +178,7 @@ ahi se lee venezolanamente:
 ```
 cambiastes vainas:
 	usa los comandos tal si quieres:
-
+	(use "git add <file>...") << te da ejemplo de comandos que puedes usar
 	modificado: README.md
 ```
 
@@ -278,9 +297,24 @@ Password for 'https://slayerfat@github.com': <i>tu clave</i>
 listo papa, ya hiciste un cambio a master.
 
 
-en resumen, sin tanta paja:
+#comentarios finales
+
+es muy recomendable que en el momento que empiecen a trabajar en el codigo, hagan un `git pull` para que se aseguren que esten trabajando en la version mas actualizada del repositorio y que sigan un ciclo de trabajo en espiral:
+
+* `git pull`
+* `git status`
+* `git add -A`
+* `git status`
+* `git commit -m "descripcion de lo que hiciste."`
+* `git status`
+* si algo cambio:
+	* `git pull`
+* si estas sincronizado
+	* continuas trabajando, etc.
 
 #resumen
+
+en resumen, sin tanta paja:
 
 clonamos:
 
@@ -328,7 +362,19 @@ y por ultimo haces el push a master:
 git push
 ```
 
+ciclo de trabajo:
 
-ESO ES TODO.
+* `git pull`
+* `git status`
+* `git add -A`
+* `git status`
+* `git commit -m "descripcion de lo que hiciste."`
+* `git status`
+* si algo cambio:
+	* `git pull`
+* si estas sincronizado
+	* continuas trabajando, etc.
+
+###ESO ES TODO.
 
 luego hablar sobre como hacer otras cosas. esto es lo mas basico.
