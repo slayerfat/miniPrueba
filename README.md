@@ -3,7 +3,6 @@ miniPrueba
 
 Repositorio en donde se manejara el codigo referente al sistema.
 
-
 # en construccion!
 
 ### este repositorio estara referido por todos los integrantes del grupo. la idea es que se familiarizen (a los que le de la gana) para que trabajen en esto.
