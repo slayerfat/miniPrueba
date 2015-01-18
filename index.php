@@ -6,10 +6,10 @@
 <body>
   <div>
     <p>
-      index: <a href="rev2/index.php">version rev2 Hola mundo</a>
+      <span><?php echo "Hola mundo" ?></span>
     </p>
     <p>
-      <a href="/mysql.php">mysql HOLA OTRO MUNDO</a>
+      <a href="#"><?php echo "enlace" ?></a>
     </p>
   </div>
 </body>
